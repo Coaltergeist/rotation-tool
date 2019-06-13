@@ -40,7 +40,7 @@ export const gunbreakerSkills: Skill[] = [
         isUsable: true,
         name: gunbreakerActionNames.GNASHING_FANG,
         potency: 400,
-        recast: 33.630,
+        recast: 30,
         recastShared: false,
     },
     {
@@ -104,11 +104,11 @@ export const gunbreakerSkills: Skill[] = [
     },
     {
         cd: 28.830,
-        description: '<h4>Sonic Break</h4><p></p>Delivers an attack with a potency of 100.<p></p>Additional Effect: Damage over time<p></p>Potency: 50<p></p>Duration: 15s<p></p>This weaponskill does not share a recast timer with any other actions.',
+        description: '<h4>Sonic Break</h4><p></p>Delivers an attack with a potency of 100.<p></p>Additional Effect: Damage over time<p></p>Potency: 90<p></p>Duration: 30s<p></p>This weaponskill does not share a recast timer with any other actions.',
         isUsable: true,
         name: gunbreakerActionNames.SONIC_BREAK,
         potency: 100,
-        recast: 28.830,
+        recast: 60.00,
         recastShared: false,
     },
     {
@@ -127,7 +127,7 @@ export const gunbreakerAbilities: Ability[] = [
     {
         cd: 60.000,
         currentCharges: 1,
-        description: '<h4>No Mercy</h4><p></p>Increases damage dealt by 10%.<p></p>Duration: 20s',
+        description: '<h4>No Mercy</h4><p></p>Increases damage dealt by 20%.<p></p>Duration: 20s',
         isUsable: true,
         isVisible: true,
         maxCharges: 1,
@@ -222,7 +222,7 @@ export const gunbreakerAbilities: Ability[] = [
 export const gunbreakerStatuses: Status[] = [
     {
         cd: 20000,
-        description: 'Increasing damage by 10%',
+        description: 'Increasing damage by 20%',
         duration: 20000,
         isDot: false,
         name: gunbreakerStatusNames.NO_MERCY,
@@ -249,12 +249,12 @@ export const gunbreakerStatuses: Status[] = [
         name: gunbreakerStatusNames.READY_TO_GOUGE,
     },
     {
-        cd: 15000,
+        cd: 30000,
         description: 'Dealing damage over time',
-        duration: 15000,
+        duration: 30000,
         isDot: true,
         name: gunbreakerDotNames.SONIC_BREAK,
-        potency: 50,
+        potency: 90,
     },
     {
         cd: 15000,
@@ -304,7 +304,7 @@ export const enemyDots: Status[] = [
         duration: 15000,
         isDot: true,
         name: gunbreakerDotNames.SONIC_BREAK,
-        potency: 50,
+        potency: 90,
     },
     {
         cd: 15000,

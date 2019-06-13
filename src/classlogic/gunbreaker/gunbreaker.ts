@@ -348,7 +348,7 @@ export class Gunbreaker extends Job {
             this.activeStatuses.set(gunbreakerStatusNames.READY_TO_TEAR, false);
             this.activeStatuses.set(gunbreakerStatusNames.READY_TO_RIP, false);
         } else if (statusName === gunbreakerStatusNames.NO_MERCY) {
-            this.damageMultiplier = 1.1;
+            this.damageMultiplier = 1.2;
         }
         setTimeout(() => {
             this.activeStatuses.set(statusName, false);

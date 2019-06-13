@@ -22,6 +22,8 @@ export class GunbreakerAbilityHandlerComponent implements OnInit {
   public isBound: boolean;
   public keyBindMode: boolean;
   public startBinding: boolean;
+  public charges: boolean;
+  public currentCharges: number;
   public keybindName: string;
   public keybind: KeyBind = {
     altMod: false,
@@ -47,6 +49,8 @@ export class GunbreakerAbilityHandlerComponent implements OnInit {
     this.isBound = false;
     this.keyBindMode = false;
     this.startBinding = false;
+    this.charges = false;
+    this.currentCharges = 0;
   }
 
   @HostListener('window:keyup', ['$event'])
@@ -157,6 +161,10 @@ export class GunbreakerAbilityHandlerComponent implements OnInit {
     player.abilities.get(this.ability.name).cd = player.abilities.get(this.ability.name).recast;
     this.setCdText();
     this.isVisible = this.ability.isVisible;
+    if (player.abilities.get(this.ability.name).maxCharges > 1) {
+      this.charges = true;
+      this.currentCharges = player.abilities.get(this.ability.name).currentCharges;
+    }
 
     switch (this.ability.name) {
       case gunbreakerActionNames.CONTINUATION:
@@ -183,6 +191,9 @@ export class GunbreakerAbilityHandlerComponent implements OnInit {
       this.cd = player.abilities.get(this.ability.name).cd;
       this.isUsable = player.actionUsable(this.ability.name);
       this.setCdText();
+      if (this.charges) {
+        this.currentCharges = player.abilities.get(this.ability.name).currentCharges;
+      }
       if (player.keyBindMode) {
         this.keyBindMode = true;
       } else {

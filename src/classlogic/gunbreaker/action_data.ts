@@ -135,7 +135,7 @@ export const gunbreakerAbilities: Ability[] = [
         recast: 60.000,
     },
     {
-        cd: 15.000,
+        cd: 30.000,
         currentCharges: 2,
         description: '<h4>Rough Divide</h4><p></p>Delivers a jumping attack with a potency of 200.<p></p>Maximum Charges: 2*<p></p>*To make up for lack of charges, cooldown has been reduced by 50% to 15s',
         isUsable: true,
@@ -143,7 +143,7 @@ export const gunbreakerAbilities: Ability[] = [
         maxCharges: 2,
         name: gunbreakerActionNames.ROUGH_DIVIDE,
         potency: 200,
-        recast: 15.000,
+        recast: 30.000,
     },
     {
         cd: 60,

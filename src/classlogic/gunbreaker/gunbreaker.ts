@@ -76,7 +76,6 @@ export class Gunbreaker extends Job {
                 case gunbreakerActionNames.BURST_STRIKE:
                     this.executePotency(this.skills.get(actionName).potency);
                     this.powderGauge(-1);
-                    this.setNextCombo([]);
                     break;
                 case gunbreakerActionNames.DEMON_SLICE:
                     this.setNextCombo(this.skills.get(actionName).comboActions);
@@ -103,13 +102,13 @@ export class Gunbreaker extends Job {
                 case gunbreakerActionNames.FATED_CIRCLE:
                     this.executePotency((this.skills.get(actionName).potency) * this.enemyNumber);
                     this.powderGauge(-1);
-                    this.setNextCombo([]);
                     break;
                 case gunbreakerActionNames.NO_MERCY:
                     this.setStatus(gunbreakerStatusNames.NO_MERCY);
                     break;
                 case gunbreakerActionNames.ROUGH_DIVIDE:
                     this.executePotency(this.abilities.get(actionName).potency);
+                    this.abilities.get(actionName).currentCharges--;
                     break;
                 case gunbreakerActionNames.BOW_SHOCK:
                     this.executePotency(this.abilities.get(actionName).potency);
@@ -212,9 +211,18 @@ export class Gunbreaker extends Job {
                             abilityElement.cd = abilityElement.recast;
                             abilityElement.isOnSpecialCd = false;
                             abilityElement.isUsable = true;
+                            if (abilityElement.currentCharges < abilityElement.maxCharges) {
+                                abilityElement.currentCharges++;
+                                if (abilityElement.currentCharges < abilityElement.maxCharges) {
+                                    abilityElement.isOnSpecialCd = true;
+                                }
+                            }
                         } else {
                             abilityElement.cd -= .1;
                             abilityElement.isUsable = false;
+                            if (abilityElement.currentCharges > 0) {
+                                abilityElement.isUsable = true;
+                            }
                         }
                     }
                 });
@@ -266,6 +274,9 @@ export class Gunbreaker extends Job {
                 abilityElement.cd = abilityElement.recast;
                 abilityElement.isOnSpecialCd = false;
                 abilityElement.isUsable = true;
+                if (abilityElement.maxCharges > 1) {
+                    abilityElement.currentCharges = abilityElement.maxCharges;
+                }
             });
 
             this.statuses.forEach((statusElement) => {

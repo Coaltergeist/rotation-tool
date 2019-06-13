@@ -7,5 +7,6 @@
   <img src="assets/img/classes/gunbreaker/actions/not_bound.png" class="overlay" *ngIf="!isBound && keyBindMode">
   <img src="assets/img/classes/gunbreaker/actions/{{ icon }}" class="main">
   <div class="centered" *ngIf="isVisible" id="textOverlay">{{ cdTxt }}</div>
+  <div class="charges" *ngIf="charges">{{ currentCharges }}</div>
 </div>
 <div class="keybind" *ngIf="isVisible">{{ keybindName }}</div>

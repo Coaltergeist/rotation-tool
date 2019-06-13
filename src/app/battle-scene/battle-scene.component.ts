@@ -15,7 +15,7 @@ export class BattleSceneComponent implements OnInit {
   public dots: Status[] = enemyDots;
 
   constructor() {
-    this.imageName = '../../assets/img/classes/gunbreaker/animations/base.png';
+    this.imageName = 'base.png';
     this.currentState = battleState.BASE;
   }
 
@@ -24,39 +24,39 @@ export class BattleSceneComponent implements OnInit {
       case 0:
         switch (this.currentState) {
           case battleState.BASE:
-            this.imageName = '../../assets/img/classes/gunbreaker/animations/base.png';
+            this.imageName = 'base.png';
             break;
           case battleState.ATTACK:
-            this.imageName = '../../assets/img/classes/gunbreaker/animations/attack.png';
+            this.imageName = 'attack.png';
             break;
           case battleState.BUFF:
-            this.imageName = '../../assets/img/classes/gunbreaker/animations/buff.png';
+            this.imageName = 'buff.png';
             break;
         }
         break;
       case 1:
         switch (this.currentState) {
           case battleState.BASE:
-            this.imageName = '../../assets/img/classes/gunbreaker/animations/base_1_powder.png';
+            this.imageName = 'base_1_powder.png';
             break;
           case battleState.ATTACK:
-            this.imageName = '../../assets/img/classes/gunbreaker/animations/attack_1_powder.png';
+            this.imageName = 'attack_1_powder.png';
             break;
           case battleState.BUFF:
-            this.imageName = '../../assets/img/classes/gunbreaker/animations/buff_1_powder.png';
+            this.imageName = 'buff_1_powder.png';
             break;
         }
         break;
       case 2:
         switch (this.currentState) {
           case battleState.BASE:
-            this.imageName = '../../assets/img/classes/gunbreaker/animations/base_2_powder.png';
+            this.imageName = 'base_2_powder.png';
             break;
           case battleState.ATTACK:
-            this.imageName = '../../assets/img/classes/gunbreaker/animations/attack_2_powder.png';
+            this.imageName = 'attack_2_powder.png';
             break;
           case battleState.BUFF:
-            this.imageName = '../../assets/img/classes/gunbreaker/animations/buff_2_powder.png';
+            this.imageName = 'buff_2_powder.png';
             break;
         }
         break;

@@ -1,11 +1,11 @@
 <ng-template #tipContent><div style="text-align:left;" [innerHTML]="description"></div></ng-template>
 <div class="actionContainer" (click)="onClick()" placement="top" [ngbTooltip]="tipContent">
-  <img src="../../assets/img/classes/gunbreaker/actions/start_binding.png" class="keybindOverlay" *ngIf="startBinding && keyBindMode">
-  <img src="../../assets/img/classes/gunbreaker/actions/combo.png" class="comboOverlay" *ngIf="isCombo && !keyBindMode">
-  <img src="../../assets/img/classes/gunbreaker/actions/not_usable.png" class="overlay" *ngIf="!isUsable && !keyBindMode">
-  <img src="../../assets/img/classes/gunbreaker/actions/bound.png" class="overlay" *ngIf="isBound && keyBindMode">
-  <img src="../../assets/img/classes/gunbreaker/actions/not_bound.png" class="overlay" *ngIf="!isBound && keyBindMode">
-  <img src="../../assets/img/classes/gunbreaker/actions/{{ icon }}" class="main">
+  <img src="../assets/img/classes/gunbreaker/actions/start_binding.png" class="keybindOverlay" *ngIf="startBinding && keyBindMode">
+  <img src="../assets/img/classes/gunbreaker/actions/combo.png" class="comboOverlay" *ngIf="isCombo && !keyBindMode">
+  <img src="../assets/img/classes/gunbreaker/actions/not_usable.png" class="overlay" *ngIf="!isUsable && !keyBindMode">
+  <img src="../assets/img/classes/gunbreaker/actions/bound.png" class="overlay" *ngIf="isBound && keyBindMode">
+  <img src="../assets/img/classes/gunbreaker/actions/not_bound.png" class="overlay" *ngIf="!isBound && keyBindMode">
+  <img src="../assets/img/classes/gunbreaker/actions/{{ icon }}" class="main">
   <div class="centered" id="textOverlay">{{ cdTxt }}</div>
 </div>
 <div class="keybind">{{ keybindName }}</div>

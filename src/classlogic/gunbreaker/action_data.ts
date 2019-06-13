@@ -252,7 +252,7 @@ export const gunbreakerStatuses: Status[] = [
         potency: 50,
     },
     {
-        description: 'Deaing damage over time',
+        description: 'Dealing damage over time',
         duration: 15000,
         isDot: true,
         name: gunbreakerDotNames.BOW_SHOCK,
@@ -296,7 +296,7 @@ export const enemyDots: Status[] = [
         potency: 50,
     },
     {
-        description: 'Deaing damage over time',
+        description: 'Dealing damage over time',
         duration: 15000,
         isDot: true,
         name: gunbreakerDotNames.BOW_SHOCK,

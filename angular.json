@@ -56,7 +56,11 @@
                 }
               ],
               "baseHref": "/rotation-tool/",
-              "deployUrl": "https://coaltergeist.github.io/rotation-tool/"
+              "deployUrl": "https://coaltergeist.github.io/rotation-tool/",
+              "assets": [
+                "src/favicon.ico",
+                "src/assets"
+              ]
             }
           }
         },

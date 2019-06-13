@@ -1,15 +1,38 @@
-#battleScene {
+.container {
+    height: 500px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    pointer-events: none;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    margin: auto;
+}
+
+.overlay {  
+    z-index: 1;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     -moz-user-select: none;
     -webkit-user-select: none;
     user-select: none;
     pointer-events: none;
 }
 
-.container {
+.main {
+    z-index: 0;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
     pointer-events: none;
-    margin-bottom: 5px;
-    padding-bottom: 5px;
-    padding-top: 10px;
 }
 
 .bottom-left {
@@ -28,27 +51,4 @@
     position: absolute;
     bottom: 8px;
     right: 16px;
-}
-
-.overlay {
-    left: 27%;
-    z-index: 1;
-    position: absolute;
-    height: 500px;
-    width: 700px;
-}
-
-.main {
-    left: 27%;
-    z-index: 0;
-    position: absolute;
-    height: 500px;
-    width: 700px;
-}
-
-.box {
-    left: 27%;
-    z-index: 0;
-    height: 500px;
-    width: 700px;
 }

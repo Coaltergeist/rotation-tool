@@ -55,8 +55,8 @@
                   "maximumError": "5mb"
                 }
               ],
-              "baseHref": "/",
-              "deployUrl": "https://coaltergeist.github.io/rotation-tool"
+              "baseHref": "/rotation-tool/",
+              "deployUrl": "https://coaltergeist.github.io/"
             }
           }
         },

@@ -17,6 +17,7 @@ Simply click an action with the mouse to begin the rotation. If you like, you ca
  - No Mercy (and perhaps other status effects/dots) can disappear of the status bar sometimes. The damage buff still works as intended
  - You can bind two actions to one key. Only the first action you bound will execute when you press the keybind
  - The layout is completely broken on mobile. I don't know why you would be trying to do this on mobile, but I thought I would mention it
+ - Until I can properly implement charges, Rough Divide had it's cooldown cut. I plan to change that in the coming days
 
 # Credits
  - [Coaltergeist](github.com/coaltergeist) original author

@@ -219,6 +219,26 @@ export class Gunbreaker extends Job {
                     }
                 });
 
+                this.statuses.forEach((statusElement) => {
+                    if (!statusElement.isDot) {
+                        if (this.activeStatuses.get(statusElement.name)) {
+                            statusElement.cd -= 100;
+                        } else {
+                            statusElement.cd = statusElement.duration;
+                        }
+                        if (statusElement.cd <= 0) {
+                            statusElement.cd = statusElement.duration;
+                        }
+                    } else {
+                        if (Date.now() - this.dots.get(statusElement.name).startTime > statusElement.duration) {
+                            statusElement.cd = statusElement.duration;
+                        } else {
+                            statusElement.cd = statusElement.duration -
+                            (Date.now() - this.dots.get(statusElement.name).startTime);
+                        }
+                    }
+                })
+
                 if (this.isOnGcd()) {
                     this.gcd -= .1;
                 } else {
@@ -246,6 +266,10 @@ export class Gunbreaker extends Job {
                 abilityElement.cd = abilityElement.recast;
                 abilityElement.isOnSpecialCd = false;
                 abilityElement.isUsable = true;
+            });
+
+            this.statuses.forEach((statusElement) => {
+                statusElement.cd = statusElement.duration;
             });
 
             this.timers.forEach((timer) => {

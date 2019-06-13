@@ -22,6 +22,7 @@ export interface Ability extends Action {
 }
 
 export interface Status {
+    cd: number;
     description: string;
     duration: number;
     name: string;

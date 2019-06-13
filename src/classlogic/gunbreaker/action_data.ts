@@ -221,30 +221,35 @@ export const gunbreakerAbilities: Ability[] = [
 
 export const gunbreakerStatuses: Status[] = [
     {
+        cd: 20000,
         description: 'Increasing damage by 10%',
         duration: 20000,
         isDot: false,
         name: gunbreakerStatusNames.NO_MERCY,
     },
     {
+        cd: 10000,
         description: 'Jugular Rip is available',
         duration: 10000,
         isDot: false,
         name: gunbreakerStatusNames.READY_TO_RIP,
     },
     {
+        cd: 10000,
         description: 'Abdomen Tear is available',
         duration: 10000,
         isDot: false,
         name: gunbreakerStatusNames.READY_TO_TEAR,
     },
     {
+        cd: 10000,
         description: 'Eye Gouge is available',
         duration: 10000,
         isDot: false,
         name: gunbreakerStatusNames.READY_TO_GOUGE,
     },
     {
+        cd: 15000,
         description: 'Dealing damage over time',
         duration: 15000,
         isDot: true,
@@ -252,6 +257,7 @@ export const gunbreakerStatuses: Status[] = [
         potency: 50,
     },
     {
+        cd: 15000,
         description: 'Dealing damage over time',
         duration: 15000,
         isDot: true,
@@ -262,24 +268,28 @@ export const gunbreakerStatuses: Status[] = [
 
 export const playerStatuses: Status[] = [
     {
+        cd: 20000,
         description: 'Increasing damage by 10%',
         duration: 20000,
         isDot: false,
         name: gunbreakerStatusNames.NO_MERCY,
     },
     {
+        cd: 10000,
         description: 'Jugular Rip is available',
         duration: 10000,
         isDot: false,
         name: gunbreakerStatusNames.READY_TO_RIP,
     },
     {
+        cd: 10000,
         description: 'Abdomen Tear is available',
         duration: 10000,
         isDot: false,
         name: gunbreakerStatusNames.READY_TO_TEAR,
     },
     {
+        cd: 10000,
         description: 'Eye Gouge is available',
         duration: 10000,
         isDot: false,
@@ -289,6 +299,7 @@ export const playerStatuses: Status[] = [
 
 export const enemyDots: Status[] = [
     {
+        cd: 15000,
         description: 'Dealing damage over time',
         duration: 15000,
         isDot: true,
@@ -296,6 +307,7 @@ export const enemyDots: Status[] = [
         potency: 50,
     },
     {
+        cd: 15000,
         description: 'Dealing damage over time',
         duration: 15000,
         isDot: true,

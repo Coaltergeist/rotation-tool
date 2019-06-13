@@ -19,7 +19,7 @@ export class GunbreakerStatusHandlerComponent implements OnInit {
   public status: Status;
 
   constructor() {
-    this.isActive = true;
+    this.isActive = false;
     this.icon = '';
     this.cd = 0;
     this.description = '';
@@ -56,35 +56,15 @@ export class GunbreakerStatusHandlerComponent implements OnInit {
 
     this.description = player.statuses.get(this.status.name).description;
 
-    this.isActive = true;
-    this.cd = player.statuses.get(this.status.name).duration / 1000;
-    if (this.status.isDot) {
-      setInterval(() => {
-        if (Date.now() - player.dots.get(this.status.name).startTime < player.statuses.get(this.status.name).duration) {
-          this.isActive = true;
-          this.cd -= .01;
-          this.setCdText();
-        } else {
-          this.isActive = false;
-        }
-        if (this.cd <= 0) {
-          this.cd = player.statuses.get(this.status.name).duration / 1000;
-          this.setCdText();
-        }
-      }, 10);
-    } else {
-      setInterval(() => {
-        this.isActive = player.activeStatuses.get(this.status.name);
-        if (this.isActive) {
-          this.cd -= .01;
-          this.setCdText();
-        }
-        if (this.cd <= 0) {
-          this.cd = player.statuses.get(this.status.name).duration / 1000;
-          this.setCdText();
-        }
-      }, 10);
-    }
+    setInterval(() => {
+      this.cd = player.statuses.get(this.status.name).cd / 1000;
+      if (this.cd * 1000 < player.statuses.get(this.status.name).duration) {
+        this.isActive = true;
+      } else {
+        this.isActive = false;
+      }
+      this.setCdText();
+    }, 10);
   }
 
 }

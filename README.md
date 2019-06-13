@@ -14,7 +14,7 @@ of expanding it for other jobs, but the time required to do so would have pushed
 Simply click an action with the mouse to begin the rotation. If you like, you can use keybind mode (located at the top of the page) to bind keys to specific actions. Any number of modifiers using Shift, Control, or Alt can be used, but keep in mind the browser has built in functions that may trigger when you use a keybind (ie. Ctrl + # will bring you to # tab in some browsers). You can see your DPS for your current rotation at the top (it is not a true DPS, rather it's Potency per Second). If you would like to reset the rotation and try again, press the Reset Rotation button.
 
 # Known Bugs
- - The status bar/dot timers are not displaying properly after the first cycle. This does not effect the statuses themselves (they still tick for the intended amount of time) 
+ - No Mercy (and perhaps other status effects/dots) can disappear of the status bar sometimes. The damage buff still works as intended
  - You can bind two actions to one key. Only the first action you bound will execute when you press the keybind
  - The layout is completely broken on mobile. I don't know why you would be trying to do this on mobile, but I thought I would mention it
 

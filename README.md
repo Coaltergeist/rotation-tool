@@ -1,27 +1,23 @@
-# RotationTool
+##FFXIV Shadowbringers Gunbreaker Rotation Simulator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
+You can find the application here: https://coaltergeist.github.io/rotation-tool/
 
-## Development server
+##About
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This is an angular application that functions as a training dummy parse for Gunbreaker. All the potency data is from tooltips shown in the Live Letter.
 
-## Code scaffolding
+This is based on the [Red Mage job simulator](https://tylian.github.io/rdm/) from Stormblood. I wrote this application with the intention
+of expanding it for other jobs, but the time required to do so would have pushed dvelopment time far past the release of Shadowbringers.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+##Operation
 
-## Build
+Simply click an action with the mouse to begin the rotation. If you like, you can use keybind mode (located at the top of the page) to bind keys to specific actions. Any number of modifiers using Shift, Control, or Alt can be used, but keep in mind the browser has built in functions that may trigger when you use a keybind (ie. Ctrl + # will bring you to # tab in some browsers). You can see your DPS for your current rotation at the top (it is not a true DPS, rather it's Potency per Second). If you would like to reset the rotation and try again, press the Reset Rotation button.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Known Bugs
+ - The status bar/dot timers are not displaying properly after the first cycle. This does not effect the statuses themselves (they still tick for the intended amount of time) 
+ - You can bind two actions to one key. Only the first action you bound will execute when you press the keybind
 
-## Running unit tests
+# Credits
+ - [Coaltergeist](github.com/coaltergeist) original author
+ - Advice/coding help from a party who wishes to remain anonymous (this would not have been possible without them; thank you!)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

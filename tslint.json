@@ -1,0 +1,22 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "quotemark": [true, "single"],
+        "no-trailing-whitespace": true,
+        "semicolon": [true, "always"],
+        "linebreak-style": [true, "LF"],
+        "variable-name": [true, "ban-keywords", "check-format"],
+        "return-undefined": true,
+        "prefer-template": true,
+        "class-name": true,
+        "arrow-return-shorthand": true,
+        "no-console": false,
+        "ban-types": false,
+        "max-line-length": [true, {"limit": 120, "ignore-pattern": "^import |^export {(.*?)}"}],
+        "interface-name": [true, "never-prefix"]
+    }
+}

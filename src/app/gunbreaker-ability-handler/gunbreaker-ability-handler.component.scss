@@ -1,0 +1,107 @@
+
+
+.actionContainer {
+    position: relative;
+    text-align: center;
+    color: black;
+    height: 42px;
+    width: 42px;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+  
+  /* Bottom left text */
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+  
+  /* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+} 
+  
+  /* Top right text */
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+  
+  /* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+  
+  /* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.keybindOverlay {
+  z-index: 2;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+}
+
+.comboOverlay {
+  z-index: 2;
+  pointer-events: none;
+  position: absolute;
+  height: 42px;
+  width: 42px;
+  animation-name: rotateCombo;
+  animation-duration: .2s;
+  animation-iteration-count: infinite;
+}
+
+.overlay {
+  z-index: 1;
+  position: absolute;
+  height: 42px;
+  width: 42px;
+  opacity: .4;
+  pointer-events: none;
+}
+
+.keybind {
+  font-size: 10px;
+  -webkit-user-select: none; /* Chrome/Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+
+.main {
+  z-index: 0;
+  height: 42px;
+  width: 42px;
+  pointer-events: none;
+}
+
+#textOverlay {
+  z-index: 3;
+  color: white;
+  pointer-events: none;
+}
+
+@keyframes rotateCombo {
+  0%   {transform: rotate(0deg)}
+  24%  {transform: rotate(0deg)}
+  25%  {transform: rotate(90deg)}
+  49%  {transform: rotate(90deg)}
+  50%  {transform: rotate(180deg)}
+  74%  {transform: rotate(180deg)}
+  75%  {transform: rotate(270deg)}
+  99%  {transform: rotate(270deg)}
+  100% {transform: rotate(360deg)}
+}

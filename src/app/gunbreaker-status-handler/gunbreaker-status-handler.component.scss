@@ -1,0 +1,27 @@
+.statusContainer {
+    position: relative;
+    text-align: center;
+    color: black;
+    height: 20px;
+    width: 20px;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+.main {
+    font-size: 10px;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    height: 20px;
+    width: 20px;
+}
+
+.cooldown {
+    font-size: 10px;
+    text-align: center;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+  }

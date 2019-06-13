@@ -1,0 +1,3 @@
+<ng-template #tipContent><div style="text-align:left;" [innerHTML]="description"></div></ng-template>
+<img src="../../assets/img/classes/gunbreaker/actions/{{ icon }}" class="main" *ngIf="isActive" [ngbTooltip]="tipContent">
+<div class="cooldown" *ngIf="isActive">{{ cdTxt }}s</div>

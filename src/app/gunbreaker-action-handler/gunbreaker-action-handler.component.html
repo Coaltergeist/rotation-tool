@@ -1,0 +1,39 @@
+<div class="statuses">
+  <table style="float: right; position: relative; z-index: 3; margin-right: 32%">
+    <tr>
+      <ng-container *ngFor="let s of statuses">
+        <th><app-gunbreaker-status-handler [status]="s"></app-gunbreaker-status-handler></th>
+      </ng-container>
+    </tr>
+  </table>
+  <table style="float: left; position: relative; z-index: 3; margin-left: 32%">
+    <tr>
+      <ng-container *ngFor="let d of dots">
+        <th><app-gunbreaker-status-handler [status]="d"></app-gunbreaker-status-handler></th>
+      </ng-container>
+    </tr>
+  </table>
+</div>
+<div class="title"></div>
+<table class="center">
+  <tbody>
+    <tr>
+      <ng-container *ngFor="let s of skills">
+        <th>
+          <app-gunbreaker-skill-handler [skill]="s"></app-gunbreaker-skill-handler>
+        </th>
+      </ng-container>
+    </tr>
+  </tbody>
+</table>
+<table class="center">
+  <tbody>
+    <tr>
+      <ng-container *ngFor="let a of abilities">
+        <th>
+          <app-gunbreaker-ability-handler [ability]="a"></app-gunbreaker-ability-handler>
+        </th>
+      </ng-container>
+    </tr>
+  </tbody>
+</table>

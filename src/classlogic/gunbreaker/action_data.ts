@@ -137,7 +137,7 @@ export const gunbreakerAbilities: Ability[] = [
     {
         cd: 30.000,
         currentCharges: 2,
-        description: '<h4>Rough Divide</h4><p></p>Delivers a jumping attack with a potency of 200.<p></p>Maximum Charges: 2*<p></p>*To make up for lack of charges, cooldown has been reduced by 50% to 15s',
+        description: '<h4>Rough Divide</h4><p></p>Delivers a jumping attack with a potency of 200.<p></p>Maximum Charges: 2',
         isUsable: true,
         isVisible: true,
         maxCharges: 2,

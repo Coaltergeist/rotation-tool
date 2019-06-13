@@ -220,7 +220,7 @@ export class Gunbreaker extends Job {
                         } else {
                             abilityElement.cd -= .1;
                             abilityElement.isUsable = false;
-                            if (abilityElement.currentCharges > 0) {
+                            if (abilityElement.currentCharges > 0 && abilityElement.maxCharges > 1) {
                                 abilityElement.isUsable = true;
                             }
                         }

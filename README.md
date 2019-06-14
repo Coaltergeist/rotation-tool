@@ -4,10 +4,9 @@ You can find the application here: https://coaltergeist.github.io/rotation-tool/
 
 # About
 
-This is an angular application that functions as a training dummy parse for Gunbreaker. All the potency data is from tooltips shown in the Live Letter.
+This is an angular application that functions as a training dummy parse for Gunbreaker. All the potency data is from tooltips shown in the Live Letter and updated with the E3 info.
 
-This is based on the [Red Mage job simulator](https://tylian.github.io/rdm/) from Stormblood. I wrote this application with the intention
-of expanding it for other jobs, but the time required to do so would have pushed dvelopment time far past the release of Shadowbringers.
+This is based on the [Red Mage job simulator](https://tylian.github.io/rdm/) from Stormblood. I wrote this application with the intention of expanding it for other jobs, but the time required to do so would have pushed dvelopment time far past the release of Shadowbringers.
 
 # Operation
 

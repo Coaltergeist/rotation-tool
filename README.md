@@ -4,10 +4,9 @@ You can find the application here: https://coaltergeist.github.io/rotation-tool/
 
 # About
 
-This is an angular application that functions as a training dummy parse for Gunbreaker. All the potency data is from tooltips shown in the Live Letter.
+This is an angular application that functions as a training dummy parse for Gunbreaker. All the potency data is from tooltips shown in the Live Letter and updated with the E3 info.
 
-This is based on the [Red Mage job simulator](https://tylian.github.io/rdm/) from Stormblood. I wrote this application with the intention
-of expanding it for other jobs, but the time required to do so would have pushed dvelopment time far past the release of Shadowbringers.
+This is based on the [Red Mage job simulator](https://tylian.github.io/rdm/) from Stormblood. I wrote this application with the intention of expanding it for other jobs, but the time required to do so would have pushed dvelopment time far past the release of Shadowbringers.
 
 # Operation
 
@@ -17,7 +16,6 @@ Simply click an action with the mouse to begin the rotation. If you like, you ca
  - No Mercy (and perhaps other status effects/dots) can disappear of the status bar sometimes. The damage buff still works as intended
  - You can bind two actions to one key. Only the first action you bound will execute when you press the keybind
  - The layout is completely broken on mobile. I don't know why you would be trying to do this on mobile, but I thought I would mention it
- - Until I can properly implement charges, Rough Divide had it's cooldown cut. I plan to change that in the coming days
 
 # Credits
  - [Coaltergeist](github.com/coaltergeist) original author

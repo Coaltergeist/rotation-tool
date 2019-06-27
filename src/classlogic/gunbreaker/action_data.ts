@@ -179,7 +179,7 @@ export const gunbreakerAbilities: Ability[] = [
     {
         cd: 30.000,
         currentCharges: 1,
-        description: '<h4>Blasting Zone</h4><p></p>Delivers an attack with a potency of 700.',
+        description: '<h4>Blasting Zone</h4><p></p>Delivers an attack with a potency of 800.',
         isUsable: true,
         isVisible: true,
         maxCharges: 1,

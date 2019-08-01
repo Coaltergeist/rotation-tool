@@ -1,6 +1,6 @@
 # FFXIV Shadowbringers Gunbreaker Rotation Simulator
 
-You can find the application here: https://coaltergeist.github.io/rotation-tool/
+You can find the application here: https://www.coaltergeist.me/rotation-tool/
 
 # About
 
